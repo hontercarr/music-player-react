@@ -1,0 +1,55 @@
+.player_container {
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+
+  > * {
+    padding: 1rem 0;
+    color: rgb(202, 202, 202);
+  }
+
+  .title {
+    font-size: inherit;
+  }
+  .navigation {
+    width: 100%;
+
+    .navigation_wrapper {
+      min-width: 100%;
+      background-color: rgba(0, 0, 0, 0.781);
+      height: 5px;
+      border-radius: 30px;
+      cursor: pointer;
+
+      .seek_bar {
+        width: 0;
+        height: 100%;
+        background-color: rgb(230, 181, 23);
+        border-radius: 30px;
+      }
+    }
+  }
+  .controls {
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+
+    .btn_action {
+      font-size: 2rem;
+      margin: 0 1rem;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(255, 197, 37);
+      }
+    }
+
+    .pp {
+      font-size: 4rem;
+    }
+  }
+}
